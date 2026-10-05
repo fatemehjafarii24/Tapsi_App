@@ -28,7 +28,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Vazirmatn", sans-serif;
+  font-family: "Manrope", sans-serif;
   background: var(--color-bg);
   color: var(--color-text);
   line-height: 1.7;
@@ -76,7 +76,6 @@ button {
   justify-content: space-between;
   min-height: 90px;
   gap: 2rem;
-  direction: rtl;
   position: relative;
 }
 
@@ -177,7 +176,7 @@ button {
   font-size: clamp(2.2rem, 4vw, 4.5rem);
   line-height: 1.2;
   font-weight: 800;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
 }
 
 .hero__actions,
@@ -225,6 +224,9 @@ button {
 
 .hero__visual img {
   width: min(100%, 620px);
+  aspect-ratio: 1.25;
+  object-fit: cover;
+  border-radius: 8px;
   filter: drop-shadow(0 22px 40px rgba(0, 0, 0, 0.12));
 }
 
@@ -340,9 +342,9 @@ section {
 
 .service-panel__content {
   max-width: 470px;
-  justify-self: end;
-  direction: rtl;
-  text-align: right;
+  justify-self: start;
+  direction: ltr;
+  text-align: left;
 }
 
 .service-panel__content h3 {
@@ -476,7 +478,7 @@ section {
 
 .feature-list li {
   position: relative;
-  padding-right: 1.5rem;
+  padding-left: 1.5rem;
   color: var(--color-text-soft);
   font-size: 1rem;
 }
@@ -484,7 +486,7 @@ section {
 .feature-list li::before {
   content: "";
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0.7em;
   width: 8px;
   height: 8px;

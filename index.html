@@ -1,38 +1,39 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="تپسی، خدمات درخواست خودرو و سفرهای شهری با اپلیکیشن سریع و امن"
+      content="Ride across the city with Tapsi. Book a ride, send a package, or get around with ease."
     />
     <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg" />
-    <title>تپسی | سوپر اپلیکیشن حمل‌ونقل</title>
+    <title>Tapsi | Move your city</title>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+    </style>
     </style>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container header__inner">
-        <a href="#" class="brand" aria-label="تپسی">
-          <img src="./assets/images/logo.svg" alt="تپسی" />
+        <a href="#" class="brand" aria-label="Tapsi home">
+          <img src="./assets/images/logo.svg" alt="Tapsi" />
         </a>
 
-        <button class="nav__toggler" type="button" aria-label="باز کردن منو" aria-expanded="false" aria-controls="primary-navigation">
+        <button class="nav__toggler" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation">
           <span></span>
           <span></span>
           <span></span>
         </button>
 
-        <nav class="nav" id="primary-navigation" aria-label="منوی اصلی">
-          <a href="https://tapsi.ir/drivers/dl">دانلود اپلیکیشن رانندگان</a>
-          <a href="https://blog.tapsi.ir/">بلاگ</a>
-          <a href="https://tapsi.ir/contact">تماس با ما</a>
-          <a href="https://join.tapsi.ir/biker?utm_source=Homepage&amp;utm_medium=Biker-Header&amp;utm_campaign=B-ACQ">ثبت‌نام راننده موتور</a>
-          <a href="https://join.tapsi.ir/driver?utm_source=Homepage&amp;utm_medium=Driver-Header&amp;utm_campaign=D-ACQ" class="nav__download">ثبت‌نام راننده خودرو</a>
+        <nav class="nav" id="primary-navigation" aria-label="Main navigation">
+          <a href="https://tapsi.ir/drivers/dl">Driver app</a>
+          <a href="https://blog.tapsi.ir/">Blog</a>
+          <a href="https://tapsi.ir/contact">Contact</a>
+          <a href="https://join.tapsi.ir/biker?utm_source=Homepage&amp;utm_medium=Biker-Header&amp;utm_campaign=B-ACQ">Become a courier</a>
+          <a href="https://join.tapsi.ir/driver?utm_source=Homepage&amp;utm_medium=Driver-Header&amp;utm_campaign=D-ACQ" class="nav__download">Drive with Tapsi</a>
         </nav>
       </div>
     </header>
@@ -41,18 +42,18 @@
       <section class="hero">
         <div class="container hero__inner">
           <div class="hero__content">
-            <span class="hero__badge">سوپر اپلیکیشن</span>
-            <h1>با سوپر اپلیکیشن تپسی، زندگی به فرمان توست.</h1>
+            <span class="hero__badge">Your city, in one app</span>
+            <h1>Wherever life takes you, Tapsi gets you there.</h1>
             <div class="hero__actions">
-              <a href="#" class="btn btn--primary">دانلود اپلیکیشن مسافران</a>
-              <a href="#" class="btn btn--secondary">ثبت‌نام راننده</a>
+              <a href="#download" class="btn btn--primary">Get the Tapsi app</a>
+              <a href="https://join.tapsi.ir/driver" class="btn btn--secondary">Become a driver</a>
             </div>
           </div>
 
-          <div class="hero__visual" aria-label="تصویر اصلی تپسی">
+          <div class="hero__visual" aria-label="Tapsi rides across the city">
             <img
-              src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?auto=format&fit=crop&w=1000&q=80"
-              alt="اپلیکیشن تپسی"
+              src="./assets/images/banner.jpg"
+              alt="Aerial view of a busy city road at night"
             />
           </div>
         </div>
@@ -61,56 +62,56 @@
       <section class="services" id="services">
         <div class="container services__inner">
           <div class="section-heading">
-            <h2>سرویس‌های تپسی</h2>
+            <h2>Find your way with Tapsi</h2>
           </div>
 
-          <div class="service-tabs" role="tablist" aria-label="سرویس‌های تپسی">
-            <button class="service-tab" id="service-classic" type="button" role="tab" aria-selected="false" aria-controls="service-panel" tabindex="-1" data-title="تپسی کلاسیک" data-description="برای سفرهای روزمره شهری، تپسی کلاسیک راهی ساده و سریع برای درخواست خودرو است." data-image="./assets/images/illus-classic.webp" data-alt="خودروی سرویس تپسی کلاسیک">
+          <div class="service-tabs" role="tablist" aria-label="Tapsi services">
+            <button class="service-tab" id="service-classic" type="button" role="tab" aria-selected="true" aria-controls="service-panel" tabindex="0" data-title="Classic rides" data-description="Your everyday city ride. Request a car in seconds and get where you need to go with Tapsi Classic." data-image="./assets/images/illus-classic.webp" data-alt="Car for Tapsi Classic rides">
               <img src="./assets/images/cc-classic.png" alt="" />
-              <span>کلاسیک</span>
+              <span>Classic</span>
             </button>
-            <button class="service-tab" id="service-hamyar" type="button" role="tab" aria-selected="false" aria-controls="service-panel" tabindex="-1" data-title="تپسی همیار" data-description="با تپسی همیار، انجام خریدها و کارهای روزمره را به همراهان تپسی بسپارید." data-image="./assets/images/illus-hamyar.png" data-alt="تصویرسازی سرویس تپسی همیار">
+            <button class="service-tab" id="service-hamyar" type="button" role="tab" aria-selected="false" aria-controls="service-panel" tabindex="-1" data-title="Errand help" data-description="Let a Tapsi helper take care of everyday errands and shopping while you focus on what matters." data-image="./assets/images/illus-hamyar.png" data-alt="Tapsi helper service illustration">
               <img src="./assets/images/cc-hamyar.png" alt="" />
-              <span>همیار</span>
+              <span>Errands</span>
             </button>
-            <button class="service-tab" id="service-package" type="button" role="tab" aria-selected="false" aria-controls="service-panel" tabindex="-1" data-title="ارسال بسته" data-description="بسته‌ها و مرسوله‌های خود را سریع و مطمئن، با سرویس ارسال بسته تپسی به مقصد برسانید." data-image="./assets/images/illus-motopeyk.png" data-alt="پیک موتوری تپسی در حال ارسال بسته">
+            <button class="service-tab" id="service-package" type="button" role="tab" aria-selected="false" aria-controls="service-panel" tabindex="-1" data-title="Package delivery" data-description="Send packages across town quickly and reliably with Tapsi's delivery service." data-image="./assets/images/illus-motopeyk.png" data-alt="Tapsi courier delivering a package">
               <img src="./assets/images/cc-motopeyk.png" alt="" />
-              <span>ارسال بسته</span>
+              <span>Delivery</span>
             </button>
-            <button class="service-tab" id="service-phone" type="button" role="tab" aria-selected="true" aria-controls="service-panel" tabindex="0" data-title="تپسی تلفنی" data-description="سرویس تپسی تلفنی با ۱۶۳۰، این امکان را به شما می‌دهد که بدون نیاز به اینترنت و اپلیکیشن، درخواست خودرو بدهید. کافیست با شماره ۱۶۳۰ تماس بگیرید." data-image="" data-alt="">
+            <button class="service-tab" id="service-phone" type="button" role="tab" aria-selected="false" aria-controls="service-panel" tabindex="-1" data-title="Book by phone" data-description="No internet or app? Call 1630 to request a Tapsi ride by phone." data-image="" data-alt="">
               <img src="./assets/images/cc-tel.png" alt="" />
-              <span>تلفنی</span>
+              <span>By phone</span>
             </button>
-            <button class="service-tab" id="service-plus" type="button" role="tab" aria-selected="false" aria-controls="service-panel" tabindex="-1" data-title="تپسی پلاس" data-description="با خودروهای باکیفیت‌تر و رانندگان حرفه‌ای، تجربه‌ای راحت‌تر از سفر شهری داشته باشید." data-image="./assets/images/illus-plus.png" data-alt="خودروی سرویس تپسی پلاس">
+            <button class="service-tab" id="service-plus" type="button" role="tab" aria-selected="false" aria-controls="service-panel" tabindex="-1" data-title="Tapsi Plus" data-description="Enjoy a more comfortable city ride with premium cars and experienced drivers." data-image="./assets/images/illus-plus.png" data-alt="Car for Tapsi Plus rides">
               <img src="./assets/images/cc-plus.png" alt="" />
-              <span>پلاس</span>
+              <span>Plus</span>
             </button>
-            <button class="service-tab" id="service-intercity" type="button" role="tab" aria-selected="false" aria-controls="service-panel" tabindex="-1" data-title="تپسی بین‌شهری" data-description="با تپسی بین‌شهری، سفرهای خود را با آسودگی و اطمینان بیشتری برنامه‌ریزی کنید." data-image="./assets/images/illus-line.png" data-alt="خودروی سرویس بین‌شهری تپسی">
+            <button class="service-tab" id="service-intercity" type="button" role="tab" aria-selected="false" aria-controls="service-panel" tabindex="-1" data-title="Intercity rides" data-description="Plan your trips between cities with the comfort and confidence of Tapsi." data-image="./assets/images/illus-line.png" data-alt="Car for Tapsi intercity rides">
               <img src="./assets/images/cc-line.png" alt="" />
-              <span>بین‌شهری</span>
+              <span>Intercity</span>
             </button>
           </div>
 
-          <div class="service-panel" id="service-panel" role="tabpanel" aria-labelledby="service-phone">
+          <div class="service-panel" id="service-panel" role="tabpanel" aria-labelledby="service-classic">
             <div class="service-panel__visual">
-              <div class="phone-art" aria-label="تصویرسازی تماس با شماره ۱۶۳۰">
+              <div class="phone-art" aria-label="Illustration of calling Tapsi" hidden>
                 <div class="phone-art__device">
-                  <div class="phone-art__status"><span>۱۹:۰۲</span><span>● ◔ ▰</span></div>
-                  <div class="phone-art__number">۱۶۳۰</div>
+                  <div class="phone-art__status"><span>19:02</span><span>● ◔ ▰</span></div>
+                  <div class="phone-art__number">1630</div>
                   <div class="phone-art__keypad" aria-hidden="true">
-                    <span>۱</span><span>۲</span><span>۳</span>
-                    <span>۴</span><span>۵</span><span>۶</span>
-                    <span>۷</span><span>۸</span><span>۹</span>
-                    <span>*</span><span>۰</span><span>#</span>
+                    <span>1</span><span>2</span><span>3</span>
+                    <span>4</span><span>5</span><span>6</span>
+                    <span>7</span><span>8</span><span>9</span>
+                    <span>*</span><span>0</span><span>#</span>
                   </div>
-                  <span class="phone-art__call">تماس</span>
+                  <span class="phone-art__call">Call</span>
                 </div>
               </div>
-              <img class="service-panel__image" src="" alt="" hidden />
+              <img class="service-panel__image" src="./assets/images/illus-classic.webp" alt="Car for Tapsi Classic rides" />
             </div>
             <div class="service-panel__content">
-              <h3 id="service-title">تپسی تلفنی</h3>
-              <p id="service-description">سرویس تپسی تلفنی با ۱۶۳۰، این امکان را به شما می‌دهد که بدون نیاز به اینترنت و اپلیکیشن، درخواست خودرو بدهید. کافیست با شماره ۱۶۳۰ تماس بگیرید.</p>
+              <h3 id="service-title">Classic rides</h3>
+              <p id="service-description">Your everyday city ride. Request a car in seconds and get where you need to go with Tapsi Classic.</p>
             </div>
           </div>
         </div>
@@ -118,85 +119,83 @@
 
       <section class="driver container">
         <div class="driver__image">
-          <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1000&q=80" alt="ثبت‌نام راننده" />
+          <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1000&q=80" alt="A driver getting ready for a trip" />
         </div>
         <div class="driver__content">
-          <span class="section-kicker">ثبت‌نام راننده</span>
-          <h2>در کمتر از ۱۰ دقیقه ثبت‌نام کنید</h2>
+          <span class="section-kicker">Drive with Tapsi</span>
+          <h2>Get on the road in under 10 minutes</h2>
           <ul class="feature-list">
-            <li>کسب درآمد بالا تا ۶۵ میلیون تومان</li>
-            <li>۵ مرتبه تسویه آنی در روز</li>
-            <li>تخفیف لوازم مصرفی خودرو از تپسی گاراژ</li>
-            <li>استفاده از امکانات باشگاه سفیران تپسی</li>
+            <li>Earn up to 65 million tomans</li>
+            <li>Get paid instantly up to five times a day</li>
+            <li>Save on car essentials with Tapsi Garage</li>
+            <li>Enjoy the benefits of the Tapsi driver community</li>
           </ul>
           <div class="driver__actions">
-            <a href="#" class="btn btn--primary">دانلود برنامه رانندگان</a>
-            <a href="#" class="btn btn--secondary">ثبت‌نام راننده خودرو</a>
+            <a href="https://tapsi.ir/drivers/dl" class="btn btn--primary">Download the driver app</a>
+            <a href="https://join.tapsi.ir/driver" class="btn btn--secondary">Sign up to drive</a>
           </div>
         </div>
       </section>
 
       <section class="business container">
         <div class="business__content">
-          <span class="section-kicker">خدمات کسب‌وکارها</span>
-          <h2>خدمات ویژه کسب‌وکارها</h2>
+          <span class="section-kicker">For business</span>
+          <h2>Move your business forward</h2>
           <p>
-            شما می‌توانید از امکانات ویژه تپسی برای کسب‌وکارها مانند درخواست نامحدود خودرو و
-            پیک به‌صورت همزمان و ایجاد کد تخفیف سازمانی استفاده کنید.
+            Manage rides and deliveries for your team, request multiple vehicles at once, and create corporate discount codes with Tapsi Business.
           </p>
           <div class="business__actions">
-            <a href="#" class="btn btn--primary">خرید کد تخفیف سازمانی</a>
-            <a href="#" class="btn btn--secondary">پنل سازمانی تپسی</a>
+            <a href="#" class="btn btn--primary">Get corporate discounts</a>
+            <a href="#" class="btn btn--secondary">Explore Tapsi Business</a>
           </div>
         </div>
         <div class="business__image">
-          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=80" alt="خدمات ویژه کسب‌وکارها" />
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=80" alt="A team meeting about business services" />
         </div>
       </section>
 
-      <section class="download-app container">
+      <section class="download-app container" id="download">
         <div class="download-app__content">
-          <span class="section-kicker">نصب تپسی</span>
-          <h2>همین حالا تپسی را نصب کن!</h2>
+          <span class="section-kicker">Get the app</span>
+          <h2>Your city is one tap away</h2>
           <p>
-            با نصب سوپر اپلیکیشن تپسی می‌توانید علاوه بر درخواست خودرو، از سرویس‌های ارسال
-            بسته، سفارش غذا، خرید، سوپرمارکت و داروخانه نیز استفاده کنید.
+            Get rides, send packages, order food and groceries, and take care of everyday essentials, all in one place.
           </p>
           <div class="driver__actions">
-            <a href="#" class="btn btn--primary">دانلود اپلیکیشن تپسی</a>
-            <a href="#" class="btn btn--secondary">دانلود اپلیکیشن رانندگان</a>
+            <a href="https://tapsi.ir/" class="btn btn--primary">Download Tapsi</a>
+            <a href="https://tapsi.ir/drivers/dl" class="btn btn--secondary">Get the driver app</a>
           </div>
         </div>
         <div class="download-app__image">
-          <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1000&q=80" alt="دانلود اپلیکیشن تپسی" />
+          <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1000&q=80" alt="Mobile phone displaying a ride-hailing app" />
         </div>
       </section>
 
       <section class="blog container">
         <div class="section-heading">
-          <h2>تازه‌ترین‌های وبلاگ تپسی</h2>
+          <h2>From the Tapsi blog</h2>
         </div>
 
         <div class="blog-grid">
           <article class="blog-card">
-            <img src="https://images.unsplash.com/photo-1551739440-5dd934d3a94a?auto=format&fit=crop&w=900&q=80" alt="وبلاگ تپسی" />
+            <img src="https://images.unsplash.com/photo-1551739440-5dd934d3a94a?auto=format&fit=crop&w=900&q=80" alt="City ride with Tapsi" />
             <div class="blog-card__body">
-              <span>اپلیکیشن درخواست خودرو و پیک</span>
-              <h3>چطور از خدمات تپسی بهتر استفاده کنیم؟</h3>
+              <span>Ride and delivery app</span>
+              <h3>Make every Tapsi ride a better one</h3>
             </div>
           </article>
           <article class="blog-card">
-            <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=900&q=80" alt="پیشنهادهای سفر" />
+            <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=900&q=80" alt="Travel inspiration" />
             <div class="blog-card__body">
-              <span>راهنمای سفر</span>
-              <h3>نکات مهم برای سفرهای شهری و راحت‌تر</h3>
+              <span>Travel guide</span>
+              <h3>Simple ways to make city travel easier</h3>
             </div>
           </article>
           <article class="blog-card">
-            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80" alt="خودرو و راننده" />
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80" alt="Car on the road" />
             <div class="blog-card__body">
-              <span>رانندگان</span>
-              <h3>چطور راننده موفق در تپسی شویم؟</h3>
+              <span>For drivers</span>
+              <h3>What it takes to thrive as a Tapsi driver</h3>
             </div>
           </article>
         </div>
@@ -206,47 +205,47 @@
     <footer class="site-footer">
       <div class="container footer__grid">
         <div class="footer__brand">
-          <a href="#" class="brand brand--footer" aria-label="تپسی">
+          <a href="#" class="brand brand--footer" aria-label="Tapsi home">
             <span class="brand__mark" aria-hidden="true">
               <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
                 <circle cx="32" cy="32" r="30" fill="currentColor" opacity="0.12"></circle>
                 <path d="M19 20.5h26c5.2 0 9.2 4.1 9.2 9.2 0 4.8-3.6 8.7-8.2 9.1l-3.5.3 2.7 8.8h-5l-2.5-8.2h-9l-2.5 8.2h-5L23 39.1h-4.2V20.5Zm7.2 5.1v9.2h14.3c2.2 0 4-1.8 4-4 0-2.2-1.8-4-4-4H26.2Z" fill="currentColor"></path>
               </svg>
             </span>
-            <span class="brand__text">تپسی</span>
+            <span class="brand__text">Tapsi</span>
           </a>
-          <p>با تپسی، سفرهای شهری سریع‌تر و ساده‌تر می‌شوند.</p>
+          <p>Getting around your city, made simple.</p>
         </div>
 
         <div class="footer__links">
           <div>
-            <h4>تپسی</h4>
-            <a href="#">وبلاگ تپسی</a>
-            <a href="#">فرصت‌های شغلی</a>
-            <a href="#">تماس با ما</a>
+            <h4>Tapsi</h4>
+            <a href="https://blog.tapsi.ir/">Blog</a>
+            <a href="#">Careers</a>
+            <a href="https://tapsi.ir/contact">Contact us</a>
           </div>
           <div>
-            <h4>مسافران</h4>
-            <a href="#">دانلود اپ مسافر</a>
-            <a href="#">نسخه وب</a>
-            <a href="#">پرسش‌های متداول</a>
+            <h4>Riders</h4>
+            <a href="#download">Get the rider app</a>
+            <a href="#">Web app</a>
+            <a href="#">FAQs</a>
           </div>
           <div>
-            <h4>رانندگان</h4>
-            <a href="#">دانلود اپ سفیر</a>
-            <a href="#">ثبت‌نام راننده</a>
-            <a href="#">شرایط و قوانین</a>
+            <h4>Drivers</h4>
+            <a href="https://tapsi.ir/drivers/dl">Get the driver app</a>
+            <a href="https://join.tapsi.ir/driver">Sign up to drive</a>
+            <a href="#">Terms and conditions</a>
           </div>
           <div>
-            <h4>کسب‌وکارها</h4>
-            <a href="#">پنل سازمانی</a>
-            <a href="#">خرید کد اعتبار</a>
-            <a href="#">تخفیف سازمانی</a>
+            <h4>Business</h4>
+            <a href="#">Business dashboard</a>
+            <a href="#">Corporate credit</a>
+            <a href="#">Business discounts</a>
           </div>
         </div>
       </div>
       <div class="container footer__bottom">
-        <p>© ۱۴۰۳ تپسی. تمام حقوق مادی و معنوی محفوظ است.</p>
+        <p>© 2026 Tapsi. All rights reserved.</p>
       </div>
     </footer>
 
@@ -281,12 +280,13 @@
         tab.addEventListener('keydown', (event) => {
           if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
           event.preventDefault();
-          const direction = event.key === 'ArrowLeft' ? 1 : -1;
+          const direction = event.key === 'ArrowLeft' ? -1 : 1;
           const nextTab = serviceTabs[(index + direction + serviceTabs.length) % serviceTabs.length];
           nextTab.focus();
           selectService(nextTab);
         });
       });
+      selectService(serviceTabs.find((tab) => tab.getAttribute('aria-selected') === 'true'));
     </script>
   </body>
 </html>
